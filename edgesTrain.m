@@ -168,7 +168,8 @@ function trainTree( opts, stream, treeInd )
 trnImgDir = [opts.bsdsDir '/images/train/'];
 trnDepDir = [opts.bsdsDir '/depth/train/'];
 trnGtDir = [opts.bsdsDir '/groundTruth/train/'];
-imgIds=dir(trnImgDir); imgIds=imgIds([imgIds.bytes]>0);
+trnDymGtDir = [opts.bsdsDir '/dymGroundTruth/train/'];
+imgIds=dir(fullfile(trnImgDir,'*.jpg')); imgIds=imgIds([imgIds.bytes]>0);
 imgIds={imgIds.name}; ext=imgIds{1}(end-2:end);
 nImgs=length(imgIds); for i=1:nImgs, imgIds{i}=imgIds{i}(1:end-4); end
 
@@ -200,6 +201,7 @@ tid = ticStatus('Collecting data',30,1);
 for i = 1:nImgs
   % get image and compute channels
   gt=load([trnGtDir imgIds{i} '.mat']); gt=gt.groundTruth;
+  dymGT=load([trnDymGtDir imgIds{i} '.mat']); dymGT=dymGT.dymGroundTruth;
   I=imread([trnImgDir imgIds{i} '.' ext]); siz=size(I);
   if(rgbd), D=single(imread([trnDepDir imgIds{i} '.png']))/1e4; end
   if(rgbd==1), I=D; elseif(rgbd==2), I=cat(3,single(I)/255,D); end
@@ -228,9 +230,10 @@ for i = 1:nImgs
   for j=1:k1, xy1=xy(j,:); xy2=xy1/shrink;
     psReg(:,:,:,j)=chnsReg(xy2(2)-ri+1:xy2(2)+ri,xy2(1)-ri+1:xy2(1)+ri,:);
     psSim(:,:,:,j)=chnsSim(xy2(2)-ri+1:xy2(2)+ri,xy2(1)-ri+1:xy2(1)+ri,:);
-    t=gt{xy1(3)}.Segmentation(xy1(2)-rg+1:xy1(2)+rg,xy1(1)-rg+1:xy1(1)+rg);
-    if(all(t(:)==t(1))), lbls(:,:,j)=1; else [~,~,t]=unique(t);
-      lbls(:,:,j)=reshape(t,gtWidth,gtWidth); end
+%     t=gt{xy1(3)}.Segmentation(xy1(2)-rg+1:xy1(2)+rg,xy1(1)-rg+1:xy1(1)+rg);  
+%     if(all(t(:)==t(1))), lbls(:,:,j)=1; else [~,~,t]=unique(t);
+%       lbls(:,:,j)=reshape(t,gtWidth,gtWidth); end
+    lbls(:,:,j)=dymGT{xy1(3)}.dymBoundaries(xy1(2)-rg+1:xy1(2)+rg,xy1(1)-rg+1:xy1(1)+rg);% added by xikang
   end
   if(0), figure(1); montage2(squeeze(psReg(:,:,1,:))); drawnow; end
   if(0), figure(2); montage2(lbls(:,:,:)); drawnow; end
@@ -246,7 +249,8 @@ if(k<size(ftrs,1)), ftrs=ftrs(1:k,:); labels=labels(:,:,1:k); end
 pTree=struct('minCount',opts.minCount, 'minChild',opts.minChild, ...
   'maxDepth',opts.maxDepth, 'H',opts.nClasses, 'split',opts.split);
 t=labels; labels=cell(k,1); for i=1:k, labels{i}=t(:,:,i); end
-pTree.discretize=@(hs,H) discretize(hs,H,opts.nSamples,opts.discretize);
+% pTree.discretize=@(hs,H) discretize(hs,H,opts.nSamples,opts.discretize);
+pTree.discretize=@(hs,H) discretize3(hs,H,opts.nSamples,opts.discretize);
 tree=forestTrain(ftrs,labels,pTree); tree.hs=cell2array(tree.hs);
 tree.fids(tree.child>0) = fids(tree.fids(tree.child>0)+1)-1;
 if(~exist(treeDir,'dir')), mkdir(treeDir); end
@@ -297,4 +301,107 @@ if(strcmpi(type,'kmeans'))
 end
 % optionally display different types of hs
 for i=1:0, figure(i); montage2(cell2array(segs(hs==i))); end
+end
+
+function [hs,segs] = discretize2( segs, nClasses, nSamples, type )
+% Convert a set of segmentations into a set of labels in [1,nClasses].
+nDym = 10;
+nSamples = 10;
+persistent cache; w=size(segs{1},1); assert(size(segs{1},2)==w);
+if(~isempty(cache) && cache{1}==w), [~,is1,is2]=deal(cache{:}); else
+    % compute all possible lookup inds for w x w patches
+    is=1:w^4; is1=floor((is-1)/w/w); is2=is-is1*w*w; is1=is1+1;
+    kp=is2>is1; is1=is1(kp); is2=is2(kp); cache={w,is1,is2};
+end
+nSamples=min(nSamples,length(is1)); kp=randperm(length(is1),nSamples);
+n=length(segs); is1=is1(kp); is2=is2(kp); zs=zeros(n,nDym);
+msk = false(w);
+x1 = floor((is1-1)/w)+1; y1 = mod(is1-1,w)+1;
+x2 = floor((is2-1)/w)+1; y2 = mod(is2-1,w)+1;
+slope = (y2-y1)./(x2-x1+1e-6);
+for i = 1:nSamples
+    if abs(slope(i))<=1
+        lx = x1(i):x2(i); ly = min(round(x1(i)+slope(i)*(lx-x1(i))),w);
+    else
+        if y1(i)<y2(i), st=1; else st=-1; end
+        ly = y1(i):st:y2(i); lx = min(round(y1(i)+1/slope(i)*(ly-y1(i))),w);
+    end
+    ind = (lx-1)*w+ly;
+    msk(ind) = true;
+end
+for i=1:n
+    vld = segs{i}(msk);
+    vpt = vld(vld~=0);
+    zs(i,:) = hist(vpt,1:nDym)';
+end
+zs=bsxfun(@minus,zs,sum(zs,1)/n); zs=zs(:,any(zs,1));
+if(isempty(zs)), hs=ones(n,1,'uint32'); segs=segs{1}; return; end
+% find most representative segs (closest to mean)
+[~,ind]=min(sum(zs.*zs,2)); segs=segs{ind};
+% apply PCA to reduce dimensionality of zs
+U=pca(zs'); d=min(5,size(U,2)); zs=zs*U(:,1:d);
+% discretize zs by clustering or discretizing pca dimensions
+d=min(d,floor(log2(nClasses))); hs=zeros(n,1);
+for i=1:d, hs=hs+(zs(:,i)<0)*2^(i-1); end
+[~,~,hs]=unique(hs); hs=uint32(hs);
+if(strcmpi(type,'kmeans'))
+    nClasses1=max(hs); C=zs(1:nClasses1,:);
+    for i=1:nClasses1, C(i,:)=mean(zs(hs==i,:),1); end
+    hs=uint32(kmeans2(zs,nClasses,'C0',C,'nIter',1));
+end
+
+end
+
+function [hs,segs] = discretize3( segs, nClasses, nSamples, type )
+% Convert a set of segmentations into a set of labels in [1,nClasses].
+nDym = 10;
+nSamples2 = 10;
+persistent cache; w=size(segs{1},1); assert(size(segs{1},2)==w);
+if(~isempty(cache) && cache{1}==w), [~,is1,is2]=deal(cache{:}); else
+    % compute all possible lookup inds for w x w patches
+    is=1:w^4; is1=floor((is-1)/w/w); is2=is-is1*w*w; is1=is1+1;
+    kp=is2>is1; is1=is1(kp); is2=is2(kp); cache={w,is1,is2};
+end
+nSamples=min(nSamples,length(is1)); kp=randperm(length(is1),nSamples);
+n=length(segs); is1_1=is1(kp); is2_1=is2(kp); zs1=zeros(n,nSamples);
+for i=1:n, zs1(i,:)=segs{i}(is1_1)==segs{i}(is2_1); end
+zs2=zeros(n,nDym*nSamples2);
+kp2=randperm(length(is1),nSamples2);
+is1_2=is1(kp2); is2_2=is2(kp2);
+x1 = floor((is1_2-1)/w)+1; y1 = mod(is1_2-1,w)+1;
+x2 = floor((is2_2-1)/w)+1; y2 = mod(is2_2-1,w)+1;
+slope = (y2-y1)./(x2-x1+1e-6);
+inds = cell(1,nSamples2);
+for i = 1:nSamples2
+    if abs(slope(i))<=1
+        lx = x1(i):x2(i); ly = min(round(x1(i)+slope(i)*(lx-x1(i))),w);
+    else
+        if y1(i)<y2(i), st=1; else st=-1; end
+        ly = y1(i):st:y2(i); lx = min(round(y1(i)+1/slope(i)*(ly-y1(i))),w);
+    end
+    ind = (lx-1)*w+ly;
+    inds{i} = ind;
+end
+for i=1:n
+    for j=1:nSamples2
+        zs2(i,(j-1)*nDym+1:j*nDym) = hist(segs{i}(inds{j}),1:nDym)';
+    end
+end
+zs = [zs1 zs2];
+zs=bsxfun(@minus,zs,sum(zs,1)/n); zs=zs(:,any(zs,1));
+if(isempty(zs)), hs=ones(n,1,'uint32'); segs=segs{1}; return; end
+% find most representative segs (closest to mean)
+[~,ind]=min(sum(zs.*zs,2)); segs=segs{ind};
+% apply PCA to reduce dimensionality of zs
+U=pca(zs'); d=min(5,size(U,2)); zs=zs*U(:,1:d);
+% discretize zs by clustering or discretizing pca dimensions
+d=min(d,floor(log2(nClasses))); hs=zeros(n,1);
+for i=1:d, hs=hs+(zs(:,i)<0)*2^(i-1); end
+[~,~,hs]=unique(hs); hs=uint32(hs);
+if(strcmpi(type,'kmeans'))
+    nClasses1=max(hs); C=zs(1:nClasses1,:);
+    for i=1:nClasses1, C(i,:)=mean(zs(hs==i,:),1); end
+    hs=uint32(kmeans2(zs,nClasses,'C0',C,'nIter',1));
+end
+
 end

@@ -42,6 +42,7 @@ p=getPrmDflt(varargin,dfs,1);
 if( ischar(model) ), model=load(model); model=model.model; end
 for i=1:length(p.opts)/2, model.opts.(p.opts{i*2-1})=p.opts{i*2}; end
 rgbd=model.opts.rgbd; model.opts.nms=1;
+model.opts.bsdsDir = '~/research/data/BSR/BSDS500/data/';
 
 % get list of relevant directories (image, depth, gt, results)
 name = [model.opts.modelFnm,p.name];
@@ -54,7 +55,7 @@ assert(exist(imgDir,'dir')==7); assert(exist(gtDir,'dir')==7);
 % run edgesDetect() on every image in imgDir and store in resDir
 if( ~exist(fullfile([resDir '-eval'],'eval_bdry.txt'),'file') )
   if(~exist(resDir,'dir')), mkdir(resDir); end
-  ids=dir(imgDir); ids=ids([ids.bytes]>0); ids={ids.name}; n=length(ids);
+  ids=dir(fullfile(imgDir,'*.jpg')); ids=ids([ids.bytes]>0); ids={ids.name}; n=length(ids);
   ext=ids{1}(end-2:end); for i=1:n, ids{i}=ids{i}(1:end-4); end
   res=cell(1,n); for i=1:n, res{i}=fullfile(resDir,[ids{i} '.png']); end
   do=false(1,n); for i=1:n, do(i)=~exist(res{i},'file'); end

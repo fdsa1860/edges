@@ -54,8 +54,10 @@ else
   % compute features and apply forest to image
   [chnsReg,chnsSim] = edgesChns( I, opts );
   s=opts.sharpen; if(s), I=convTri(rgbConvert(I,'rgb'),1); end
-  if(nargout<4), [E,inds] = edgesDetectMex(model,I,chnsReg,chnsSim);
-  else [E,inds,segs] = edgesDetectMex(model,I,chnsReg,chnsSim); end
+%   if(nargout<4), [E,inds] = edgesDetectMex(model,I,chnsReg,chnsSim);
+%   else [E,inds,segs] = edgesDetectMex(model,I,chnsReg,chnsSim); end
+  if(nargout<4), [E,inds] = dymEdgesDetectMex(model,I,chnsReg,chnsSim);
+  else [E,inds,segs] = dymEdgesDetectMex(model,I,chnsReg,chnsSim); end
   
   % normalize and finalize edge maps
   t=opts.stride^2/opts.gtWidth^2/opts.nTreesEval; r=opts.gtWidth/2;

@@ -1,4 +1,5 @@
 /BSR/
-/models/
 /sweeps*
 /boxes/
+.DS_Store
+*~
