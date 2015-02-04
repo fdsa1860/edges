@@ -60,11 +60,13 @@ if( ~exist(fullfile([resDir '-eval'],'eval_bdry.txt'),'file') )
   res=cell(1,n); for i=1:n, res{i}=fullfile(resDir,[ids{i} '.png']); end
   do=false(1,n); for i=1:n, do(i)=~exist(res{i},'file'); end
   ids=ids(do); res=res(do); m=length(ids);
-  parfor i=1:m, id=ids{i};
+%   parfor i=1:m, id=ids{i};
+  for i=1:m, id=ids{i};
     I = imread(fullfile(imgDir,[id '.' ext])); D=[];
     if(rgbd), D=single(imread(fullfile(depDir,[id '.png'])))/1e4; end
     if(rgbd==1), I=D; elseif(rgbd==2), I=cat(3,single(I)/255,D); end
-    E=edgesDetect(I,model); imwrite(uint8(E*255),res{i});
+    E=edgesDetect(I,model); % imwrite(uint8(E*255),res{i});
+    imwrite(im2uint8(E),res{i});
   end
 end
 

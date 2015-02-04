@@ -86,7 +86,7 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
   const int chnDims[3] = {h/shrink,w/shrink,nChns};
   const int indDims[3] = {h1,w1,nTreesEval};
   const int outDims[3] = {h2,w2,1};
-//  const int outDims2[3] = {h2,w2,10};
+  const int outDims2[3] = {h2,w2,10};
   const int segDims[5] = {gtWidth,gtWidth,h1,w1,nTreesEval};
 
   // construct lookup tables
@@ -97,7 +97,7 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
   buildLookupSs( cids1, cids2, (int*)chnDims, imWidth/shrink, nCells );
 
   // create outputs
-  pl[0] = mxCreateNumericArray(3,outDims,mxSINGLE_CLASS,mxREAL);
+  pl[0] = mxCreateNumericArray(3,outDims2,mxSINGLE_CLASS,mxREAL);
   float *E = (float*) mxGetData(pl[0]);
   pl[1] = mxCreateNumericArray(3,indDims,mxUINT32_CLASS,mxREAL);
   uint32 *ind = (uint32*) mxGetData(pl[1]);
@@ -142,7 +142,7 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
         const uint8 *segs2 = segs+k*gtWidth*gtWidth;
         for(int i=0;i<gtWidth*gtWidth;++i) {
           if(segs2[i]==0) continue;
-          E1[(segs2[i]-1)*gtWidth*gtWidth+eids[i]]++;
+          E1[(segs2[i]-1)*outDims2[0]*outDims2[1]+eids[i]]++;
         }
 //        for( int b=b0; b<b1; b++ ) {
 //          mexPrintf("%d\t%d\t%d\t%d\t%d\n",b0,b1,eBins[b0],eBins[b1],k);

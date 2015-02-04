@@ -58,6 +58,15 @@ else
 %   else [E,inds,segs] = edgesDetectMex(model,I,chnsReg,chnsSim); end
   if(nargout<4), [E,inds] = dymEdgesDetectMex(model,I,chnsReg,chnsSim);
   else [E,inds,segs] = dymEdgesDetectMex(model,I,chnsReg,chnsSim); end
+%   [V,E] = max(E,[],3);
+  E(E<5)=0;
+%   [m,n] = find(E~=0);
+%   color = hsv(10);
+%   E3 = zeros([size(E,1) size(E,2) 3]);
+%   for i = 1:length(m)
+%       E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
+%   end
+%   E = E3;
   
   % normalize and finalize edge maps
   t=opts.stride^2/opts.gtWidth^2/opts.nTreesEval; r=opts.gtWidth/2;
@@ -65,14 +74,45 @@ else
   E=E(1+r:siz(1)+r,1+r:siz(2)+r,:)*t; E=convTri(E,1);
 end
 
-% compute approximate orientation O from edges E
+% % compute approximate orientation O from edges E
+% if( opts.nms==-1 ), O=[]; elseif( nargout>1 || opts.nms )
+%   [Ox,Oy]=gradient2(convTri(E,4));
+%   [Oxx,~]=gradient2(Ox); [Oxy,Oyy]=gradient2(Oy);
+%   O=mod(atan(Oyy.*sign(-Oxy)./(Oxx+1e-5)),pi);
+% end
+% % perform nms
+% if( opts.nms>0 ), E=edgesNmsMex(E,O,1,5,1.01,opts.nThreads); end
+% if( opts.nms>0 )
+%     for i = 1:size(E,3)
+%         E(:,:,i)=edgesNmsMex(E(:,:,i),O,1,5,1.01,opts.nThreads);
+%     end
+% end
+% [V,E] = max(E,[],3);
+% E(V<1e-4)=0;
+% [m,n] = find(E~=0);
+% color = hsv(10);
+% E3 = zeros([size(E,1) size(E,2) 3]);
+% for i = 1:length(m)
+%     E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
+% end
+% E = E3;
+
+[V,E] = max(E,[],3);
 if( opts.nms==-1 ), O=[]; elseif( nargout>1 || opts.nms )
-  [Ox,Oy]=gradient2(convTri(E,4));
+  [Ox,Oy]=gradient2(convTri(V,4));
   [Oxx,~]=gradient2(Ox); [Oxy,Oyy]=gradient2(Oy);
   O=mod(atan(Oyy.*sign(-Oxy)./(Oxx+1e-5)),pi);
 end
+if( opts.nms>0 ), V=edgesNmsMex(V,O,1,5,1.01,opts.nThreads); end
+% E(V<1e-4)=0;
+% [m,n] = find(E~=0);
+% color = hsv(10);
+% E3 = zeros([size(E,1) size(E,2) 3]);
+% for i = 1:length(m)
+%     E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
+% end
+% E = E3;
 
-% perform nms
-if( opts.nms>0 ), E=edgesNmsMex(E,O,1,5,1.01,opts.nThreads); end
+E = V/max(V(:));
 
 end
