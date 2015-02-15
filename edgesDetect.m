@@ -46,6 +46,9 @@ if( opts.multiscale )
   end; E=E/k; model.opts=opts;
   
 else
+    % scale I
+    scale = 2;
+    I = imresize(I,scale,'bilinear');
   % pad image, making divisible by 4
   siz=size(I); r=opts.imWidth/2; p=[r r r r];
   p([2 4])=p([2 4])+mod(4-mod(siz(1:2)+2*r,4),4);
@@ -58,15 +61,8 @@ else
 %   else [E,inds,segs] = edgesDetectMex(model,I,chnsReg,chnsSim); end
   if(nargout<4), [E,inds] = dymEdgesDetectMex(model,I,chnsReg,chnsSim);
   else [E,inds,segs] = dymEdgesDetectMex(model,I,chnsReg,chnsSim); end
-%   [V,E] = max(E,[],3);
-  E(E<5)=0;
-%   [m,n] = find(E~=0);
-%   color = hsv(10);
-%   E3 = zeros([size(E,1) size(E,2) 3]);
-%   for i = 1:length(m)
-%       E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
-%   end
-%   E = E3;
+%   E(E<5)=0;
+  E(E<4)=0;
   
   % normalize and finalize edge maps
   t=opts.stride^2/opts.gtWidth^2/opts.nTreesEval; r=opts.gtWidth/2;
@@ -82,37 +78,30 @@ end
 % end
 % % perform nms
 % if( opts.nms>0 ), E=edgesNmsMex(E,O,1,5,1.01,opts.nThreads); end
-% if( opts.nms>0 )
-%     for i = 1:size(E,3)
-%         E(:,:,i)=edgesNmsMex(E(:,:,i),O,1,5,1.01,opts.nThreads);
-%     end
-% end
-% [V,E] = max(E,[],3);
-% E(V<1e-4)=0;
-% [m,n] = find(E~=0);
-% color = hsv(10);
-% E3 = zeros([size(E,1) size(E,2) 3]);
-% for i = 1:length(m)
-%     E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
-% end
-% E = E3;
 
+% nms modified by xikang
 [V,E] = max(E,[],3);
+% V = sum(E,3); [~,E] = max(E,[],3);
 if( opts.nms==-1 ), O=[]; elseif( nargout>1 || opts.nms )
   [Ox,Oy]=gradient2(convTri(V,4));
   [Oxx,~]=gradient2(Ox); [Oxy,Oyy]=gradient2(Oy);
   O=mod(atan(Oyy.*sign(-Oxy)./(Oxx+1e-5)),pi);
 end
 if( opts.nms>0 ), V=edgesNmsMex(V,O,1,5,1.01,opts.nThreads); end
-% E(V<1e-4)=0;
-% [m,n] = find(E~=0);
-% color = hsv(10);
-% E3 = zeros([size(E,1) size(E,2) 3]);
-% for i = 1:length(m)
-%     E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
-% end
-% E = E3;
 
-E = V/max(V(:));
+% color image
+E(V<1e-2)=0;
+[m,n] = find(E~=0);
+color = hsv(10);
+E3 = zeros([size(E,1) size(E,2) 3]);
+for i = 1:length(m)
+    E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
+end
+E = E3;
+
+% scale back
+% E = imresize(E,1/scale,'bilinear');
+
+% E = V/max(V(:)); % gray image
 
 end
