@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels
+END
+convMax.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/convMax.m
+END
+rgbConvert.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/rgbConvert.m
+END
+hog.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/hog.m
+END
+convBox.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/convBox.m
+END
+gradient2.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/gradient2.m
+END
+chnsPyramid.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/chnsPyramid.m
+END
+gradientMag.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/gradientMag.m
+END
+fhog.m
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/fhog.m
+END
+convTri.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/convTri.m
+END
+gradientHist.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/gradientHist.m
+END
+chnsCompute.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/chnsCompute.m
+END
+imPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/imPad.m
+END
+hogDraw.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/hogDraw.m
+END
+chnsScaling.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/chnsScaling.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/Contents.m
+END
+imResample.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/channels/imResample.m
+END

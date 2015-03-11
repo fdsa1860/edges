@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab
+END
+isfield2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/isfield2.m
+END
+diskFill.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/diskFill.m
+END
+getPrmDflt.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/getPrmDflt.m
+END
+dispMatrixIm.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/dispMatrixIm.m
+END
+simpleCache.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/simpleCache.m
+END
+tpsInterpolate.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/tpsInterpolate.m
+END
+subsToArray.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/subsToArray.m
+END
+fevalDistrDisk.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/fevalDistrDisk.m
+END
+fevalArrays.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/fevalArrays.m
+END
+gauss2ellipse.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/gauss2ellipse.m
+END
+fevalMats.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/fevalMats.m
+END
+plotGaussEllipses.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/plotGaussEllipses.m
+END
+plotRoc.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/plotRoc.m
+END
+fevalImages.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/fevalImages.m
+END
+ticStatus.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/ticStatus.m
+END
+mat2cell2.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/mat2cell2.m
+END
+cc.m
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/cc.m
+END
+normpdf2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/normpdf2.m
+END
+ccc.m
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/ccc.m
+END
+ind2sub2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/ind2sub2.m
+END
+sub2ind2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/sub2ind2.m
+END
+tocStatus.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/tocStatus.m
+END
+multiTimes.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/multiTimes.m
+END
+char2img.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/char2img.m
+END
+plotEllipse.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/plotEllipse.m
+END
+multiDiv.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/multiDiv.m
+END
+cell2array.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/cell2array.m
+END
+tpsGetWarp.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/tpsGetWarp.m
+END
+spBlkDiag.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/spBlkDiag.m
+END
+arrayCrop.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/arrayCrop.m
+END
+fevalDistr.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/fevalDistr.m
+END
+tpsInterpolateIm.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/tpsInterpolateIm.m
+END
+imLabel.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/imLabel.m
+END
+text2.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/text2.m
+END
+figureResized.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/figureResized.m
+END
+tpsRandom.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/tpsRandom.m
+END
+checkNumArgs.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/checkNumArgs.m
+END
+dijkstra.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/dijkstra.m
+END
+randint2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/randint2.m
+END
+c.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/c.m
+END
+dirSynch.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/dirSynch.m
+END
+rotationMatrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/rotationMatrix.m
+END
+medianw.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/medianw.m
+END
+randSample.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/randSample.m
+END
+int2str2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/int2str2.m
+END
+uniqueColors.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/uniqueColors.m
+END
+num2strs.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/num2strs.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/Contents.m
+END
+arrayToDims.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/arrayToDims.m
+END
+txt2img.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/matlab/txt2img.m
+END

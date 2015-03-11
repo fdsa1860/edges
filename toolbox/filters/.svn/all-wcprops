@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters
+END
+filterDog2d.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterDog2d.m
+END
+FbDoG.mat
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbDoG.mat
+END
+FbReconstruct2d.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbReconstruct2d.m
+END
+FbCrop.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbCrop.m
+END
+filterSteerable.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterSteerable.m
+END
+filterVisualize.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterVisualize.m
+END
+medfilt1m.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/medfilt1m.m
+END
+FbVisualize.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbVisualize.m
+END
+FbApply2d.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbApply2d.m
+END
+modefilt1.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/modefilt1.m
+END
+filterGabor1d.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterGabor1d.m
+END
+filterBinomial1d.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterBinomial1d.m
+END
+FbMake.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbMake.m
+END
+filterGabor2d.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterGabor2d.m
+END
+FbGabor.mat
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/FbGabor.mat
+END
+filterGauss.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterGauss.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/Contents.m
+END
+filterDoog.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/filters/filterDoog.m
+END

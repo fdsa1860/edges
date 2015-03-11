@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images
+END
+xcorrn.m
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/xcorrn.m
+END
+montage2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/montage2.m
+END
+histcImWin.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/histcImWin.m
+END
+localSum.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/localSum.m
+END
+imtransform2.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imtransform2.m
+END
+imShrink.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imShrink.m
+END
+nonMaxSuprWin.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/nonMaxSuprWin.m
+END
+images.mat
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/images.mat
+END
+clusterMontage.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/clusterMontage.m
+END
+histc2.m
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/histc2.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/Contents.m
+END
+textureMap.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/textureMap.m
+END
+makeGif.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/makeGif.m
+END
+jitterImage.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/jitterImage.m
+END
+playMovie.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/playMovie.m
+END
+nonMaxSuprList.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/nonMaxSuprList.m
+END
+movieToImages.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/movieToImages.m
+END
+filmStrip.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/filmStrip.m
+END
+nonMaxSupr.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/nonMaxSupr.m
+END
+gaussSmooth.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/gaussSmooth.m
+END
+maskCircle.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/maskCircle.m
+END
+histMontage.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/histMontage.m
+END
+xeucn.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/xeucn.m
+END
+imNormalize.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imNormalize.m
+END
+histcImLoc.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/histcImLoc.m
+END
+convnFast.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/convnFast.m
+END
+imMlGauss.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imMlGauss.m
+END
+maskSphere.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/maskSphere.m
+END
+imwrite2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imwrite2.m
+END
+assignToBins.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/assignToBins.m
+END
+im.m
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/im.m
+END
+normxcorrn.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/normxcorrn.m
+END
+imRectRot.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/imRectRot.m
+END
+maskGaussians.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/maskGaussians.m
+END
+maskEllipse.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/images/maskEllipse.m
+END

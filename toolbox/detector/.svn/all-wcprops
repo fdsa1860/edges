@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector
+END
+acfDemoInria.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfDemoInria.m
+END
+acfModify.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfModify.m
+END
+bbNms.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/bbNms.m
+END
+acfDetect.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfDetect.m
+END
+acfTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfTrain.m
+END
+acfTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfTest.m
+END
+bbApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/bbApply.m
+END
+bbLabeler.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/bbLabeler.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/Contents.m
+END
+acfDemoCal.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/acfDemoCal.m
+END
+bbGt.m
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/detector/bbGt.m
+END

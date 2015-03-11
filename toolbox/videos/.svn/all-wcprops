@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/Contents.m
+END
+imagesAlign.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/imagesAlign.m
+END
+seqIo.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/seqIo.m
+END
+opticalFlow.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/opticalFlow.m
+END
+seqWriterPlugin.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/seqWriterPlugin.m
+END
+behaviorAnnotator.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/behaviorAnnotator.m
+END
+seqPlayer.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/seqPlayer.m
+END
+opticalFlowTest.mat
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/opticalFlowTest.mat
+END
+peds30-seek.mat
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/peds30-seek.mat
+END
+behaviorData.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/behaviorData.m
+END
+imagesAlignSeq.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/imagesAlignSeq.m
+END
+peds30.seq
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/peds30.seq
+END
+seqReaderPlugin.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/seqReaderPlugin.m
+END
+kernelTracker.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/videos/kernelTracker.m
+END

@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify
+END
+fernsClfApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/fernsClfApply.m
+END
+confMatrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/confMatrix.m
+END
+meanShift.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/meanShift.m
+END
+fernsRegApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/fernsRegApply.m
+END
+pcaData.mat
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pcaData.mat
+END
+demoCluster.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/demoCluster.m
+END
+rbfComputeBasis.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/rbfComputeBasis.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/Contents.m
+END
+pcaVisualize.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pcaVisualize.m
+END
+kmeans2.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/kmeans2.m
+END
+fernsClfTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/fernsClfTrain.m
+END
+adaBoostApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/adaBoostApply.m
+END
+pca.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pca.m
+END
+meanShiftImExplore.m
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/meanShiftImExplore.m
+END
+meanShiftIm.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/meanShiftIm.m
+END
+rbfComputeFtrs.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/rbfComputeFtrs.m
+END
+visualizeData.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/visualizeData.m
+END
+demoGenData.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/demoGenData.m
+END
+forestApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/forestApply.m
+END
+pcaApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pcaApply.m
+END
+fernsRegTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/fernsRegTrain.m
+END
+binaryTreeApply.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/binaryTreeApply.m
+END
+confMatrixShow.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/confMatrixShow.m
+END
+rbfDemo.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/rbfDemo.m
+END
+softMin.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/softMin.m
+END
+distMatrixShow.m
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/distMatrixShow.m
+END
+adaBoostTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/adaBoostTrain.m
+END
+fernsInds.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/fernsInds.m
+END
+forestTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/forestTrain.m
+END
+binaryTreeTrain.m
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/binaryTreeTrain.m
+END
+pdist2.m
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pdist2.m
+END
+pcaRandVec.m
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/robust_systems/!svn/ver/32/ShareCode/contour%20clustering%20code/code/structured%20edge%20detector/toolbox/classify/pcaRandVec.m
+END
