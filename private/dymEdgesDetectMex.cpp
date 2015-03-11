@@ -69,6 +69,9 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
     int(mxGetNumberOfElements(mxGetField(model,0,"thrs")));
   const char *msgSharpen="Model supports sharpening of at most %i pixels!\n";
   if( sharpen>nBnds-1 ) { sharpen=nBnds-1; mexPrintf(msgSharpen,sharpen); }
+    
+  if (mxGetField(opts,0,"nLabels")==NULL) { mexErrMsgTxt("model.opts.nLabels doesn't exist!\n");}
+  const int nLabels = (int) mxGetScalar(mxGetField(opts,0,"nLabels"));
 
   // get dimensions and constants
   const mwSize *imgSize = mxGetDimensions(pr[1]);
@@ -86,7 +89,7 @@ void mexFunction( int nl, mxArray *pl[], int nr, const mxArray *pr[] )
   const int chnDims[3] = {h/shrink,w/shrink,nChns};
   const int indDims[3] = {h1,w1,nTreesEval};
   const int outDims[3] = {h2,w2,1};
-  const int outDims2[3] = {h2,w2,10};
+  const int outDims2[3] = {h2,w2,nLabels};
   const int segDims[5] = {gtWidth,gtWidth,h1,w1,nTreesEval};
 
   // construct lookup tables

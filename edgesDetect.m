@@ -47,7 +47,7 @@ if( opts.multiscale )
   
 else
     % scale I
-    scale = 2;
+    scale = 1;
     I = imresize(I,scale,'bilinear');
   % pad image, making divisible by 4
   siz=size(I); r=opts.imWidth/2; p=[r r r r];
@@ -92,7 +92,7 @@ if( opts.nms>0 ), V=edgesNmsMex(V,O,1,5,1.01,opts.nThreads); end
 % color image
 E(V<1e-2)=0;
 [m,n] = find(E~=0);
-color = hsv(10);
+color = hsv(model.opts.nLabels);
 E3 = zeros([size(E,1) size(E,2) 3]);
 for i = 1:length(m)
     E3(m(i),n(i),:) = color(E(m(i),n(i)),:);
