@@ -95,6 +95,7 @@ imWidth=opts.imWidth; gtWidth=opts.gtWidth;
 imWidth=round(max(gtWidth,imWidth)/shrink/2)*shrink*2;
 opts.imWidth=imWidth; opts.gtWidth=gtWidth;
 nChnsGrad=(opts.nOrients+1)*2; nChnsColor=3;
+% nChnsGrad=(opts.nOrients+1)*3; nChnsColor=3;
 if(opts.rgbd==1), nChnsColor=1; end
 if(opts.rgbd==2), nChnsGrad=nChnsGrad*2; nChnsColor=nChnsColor+1; end
 nChns = nChnsGrad+nChnsColor; opts.nChns = nChns;
@@ -361,7 +362,7 @@ function [hs,segs,segs2] = discretize3( segs, segs2, nClasses, nSamples, type )
 % Convert a set of segmentations into a set of labels in [1,nClasses].
 nDym = 10;
 % nSamples = 128;
-nSamples2 = 50;
+nSamples2 = 10;
 assert(length(segs)==length(segs2));
 persistent cache; w=size(segs{1},1); assert(size(segs{1},2)==w);
 if(~isempty(cache) && cache{1}==w), [~,is1,is2]=deal(cache{:}); else
@@ -370,10 +371,10 @@ if(~isempty(cache) && cache{1}==w), [~,is1,is2]=deal(cache{:}); else
     kp=is2>is1; is1=is1(kp); is2=is2(kp); cache={w,is1,is2};
 end
 n=length(segs); 
-% nSamples=min(nSamples,length(is1)); kp=randperm(length(is1),nSamples);
-% is1_1=is1(kp); is2_1=is2(kp); zs1=zeros(n,nSamples,'single');
-% for i=1:n, zs1(i,:)=segs{i}(is1_1)==segs{i}(is2_1); end
-t=zeros(256,length(segs2)); for i=1:length(segs2), t(:,i)=segs2{i}(:); end
+nSamples=min(nSamples,length(is1)); kp=randperm(length(is1),nSamples);
+is1_1=is1(kp); is2_1=is2(kp); zs1=zeros(n,nSamples,'single');
+for i=1:n, zs1(i,:)=segs{i}(is1_1)==segs{i}(is2_1); end
+t=zeros(numel(segs2{1}),length(segs2)); for i=1:length(segs2), t(:,i)=segs2{i}(:); end
 zs2=zeros(n,nDym*nSamples2,'single');
 kp2=randperm(length(is1),nSamples2);
 is1_2=is1(kp2); is2_2=is2(kp2);
@@ -392,8 +393,8 @@ for i = 1:nSamples2
     h(1,:) = [];
     zs2(:,(i-1)*nDym+1:i*nDym) = h';
 end
-% zs = [zs1 zs2];
-zs = zs2;
+zs = [zs1 zs2];
+% zs = zs2;
 zs=bsxfun(@minus,zs,sum(zs,1)/n); zs=zs(:,any(zs,1));
 if(isempty(zs)), hs=ones(n,1,'uint32'); segs2=segs2{1}; return; end
 % find most representative segs (closest to mean)
